@@ -11,22 +11,21 @@ body {
     color: #fff;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 1px;
+    transform-style: preserve-3d;
 }
 
 #main {
     width: 100%;
-    height: 100vh;
+    height: 105vh;
     background-image: url(images/background-image.png);
     background-size: cover;
     background-position: center;
-}
 
-#back{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 120vh;
-    background-color: black;
+    @media (max-width: 1000px) {
+        height: 70vh;
+    }
 }
 
 .container {
@@ -75,41 +74,10 @@ nav ul li a {
     height: 100vh;
 }
 
-#left-globe {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 13px;
-    width: 18vw;
-    height: 12vh;
-    border-radius: 0px 100px 100px 0px;
-    background-color: #fff;
-    color: #213546;
-    position: absolute;
-    top: 35%;
-    transform: translate(0%, -50%);
-}
-
-#left-globe h1 {
-    margin-left: 40px;
-    font-size: 20px;
-    font-weight: 100;
-}
-
-#globe {
-    width: 5vw;
-    height: 5vw;
-    background-color: #213546;
-    border-radius: 50%;
-    position: relative;
-    animation: circle2 2.7s linear infinite;
-}
-
 #job {
     position: absolute;
-    top: 20%;
+    top: 10%;
     right: 5%;
-    
 }
 
 iconify-icon {
@@ -119,53 +87,27 @@ iconify-icon {
     margin-left: 9.6vw;
 }
 
-#student-wants {
-    /* font-family: "Source Code Pro", monospace; */
+#software-engineer, #student-wants {
     font-size: 1.8vw;
-    font-weight: lighter;
-    margin-left: 10.3vw;
-}
-
-#software-engineer {
-    /* font-family: "Source Code Pro", monospace; */
-    font-size: 2.2vw;
     font-weight: bold;
     margin-left: 10.2vw;
+    font-style: italic;
 }
 
 #gabriel-mislang {
-    width: 400%;
+    top: 50%;
+    width: 100%;
     position: relative;
-    top: 55%;
-    overflow: hidden;
     white-space: nowrap;
+    overflow: hidden;
 }
 
 #gabriel-mislang h1 {
     display: inline-block;
+    white-space: nowrap;
     font-family: "Poppins", sans-serif;
     font-size: 12.5vw;
     font-weight: 400;
-    animation: 12s linear infinite;
-    animation-name: move-to-the-left;
-}
-
-@keyframes move-to-the-left{
-    from{
-        transform: translate(0%);
-    }
-    to{
-        transform: translate(-50.5%);
-    }
-}
-
-@keyframes move-to-the-right{
-    from{
-        transform: translate(0%);
-    }
-    to{
-        transform: translate(50.5%);
-    }
 }
 
 #one{
