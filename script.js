@@ -20,18 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // GSAP ScrollTrigger for animations
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to(".credit", {
-        scrollTrigger: {
-            trigger: "#main",
-            start: "5% 0%",
-            end: "bottom bottom",
-            scrub: 1,
-        },
-        y: -20,
-        ease: "power1.out",      
-    });
-
-    gsap.to(".left-navigation-bar", {
+    gsap.to(".navigation-bar", {
         scrollTrigger: {
             trigger: "#main",
             start: "5% 0%",
@@ -42,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
     });
 
-    gsap.to("#description iconify-icon", {
+    gsap.to("#arrow-right-down-line", {
         scrollTrigger: {
             trigger: "#main",
             start: "70% 50%",
@@ -52,8 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
         y: -60,
         ease: "power1.out",
     });
-
-    gsap.to("#student-wants", {
+    
+    gsap.to("#description_line_1", {
         scrollTrigger: {
             trigger: "#main",
             start: "70% 40%",
@@ -64,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
     });
 
-    gsap.to("#software-engineer", {
+    gsap.to("#description_line_2", {
         scrollTrigger: {
             trigger: "#main",
             start: "70% 40%",
@@ -75,28 +64,28 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
     });
 
-    gsap.to("#gabriel-mislang", {
-        scrollTrigger: {
-            trigger: "#main",
-            start: "80% 70%",
-            end: "bottom bottom",
-            scrub: 1, 
-        },
-        y: -50,
-        ease: "power1.out",
-    });
+    // gsap.to("#gabriel-mislang", {
+    //     scrollTrigger: {
+    //         trigger: "#main",
+    //         start: "80% 70%",
+    //         end: "bottom bottom",
+    //         scrub: 1, 
+    //     },
+    //     y: -50,
+    //     ease: "power1.out",
+    // });
 
-    gsap.to("#main", {
-        scrollTrigger: {
-            trigger: "#main",
-            start: "top top", 
-            end: "bottom bottom",
-            scrub: 1, 
-            // Debugging markers
-            // markers: true, // Disable markers for a cleaner look
-        },
-        y: 70, 
-        ease: "linear", 
-    })
+    // gsap.to("#main", {
+    //     scrollTrigger: {
+    //         trigger: "#main",
+    //         start: "top top", 
+    //         end: "bottom bottom",
+    //         scrub: 1, 
+    //         // Debugging markers
+    //         // markers: true, // Disable markers for a cleaner look
+    //     },
+    //     y: 70, 
+    //     ease: "linear", 
+    // })
 
 });
