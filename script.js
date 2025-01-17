@@ -2,17 +2,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const gabrielMislang = document.querySelector('#gabriel-mislang h1');
 
     if (gabrielMislang) {
-        // Scroll logic for GSAP
+        // Scroll logic for the text moving left and right
         window.addEventListener('scroll', () => {
-            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const scrollTop = window.scrollY || document.documentElement.scrollTop; // Get current scroll position
 
-            // Calculate a consistent movement based on total scroll position
-            const moveX = scrollTop * -2.4; // Adjust multiplier for sensitivity and direction
+            const moveX = scrollTop * -2.4; // Sensitivity
             
             gsap.to(gabrielMislang, {
-                x: moveX, // Move based on total scroll position
+                x: moveX, 
                 duration: 0.1, // Smooth update for visible responsiveness
-                ease: "linear", // Smooth easing for consistent animation
+                ease: "power4.out", // Smooth easing for consistent animation
                 overwrite: "auto", // Prevent overlapping animations
             });
         });
@@ -24,80 +23,80 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.to(".credit", {
         scrollTrigger: {
             trigger: "#main",
-            start: "5% 0%", // Trigger when #main is halfway visible
-            end: "bottom bottom", // End when #main exits the viewport
-            scrub: 1, // Smooth scrolling effect
+            start: "5% 0%",
+            end: "bottom bottom",
+            scrub: 1,
         },
-        y: -20, // Parallax movement upwards
-        ease: "power1.out", // Smooth easing for consistent animation        
+        y: -20,
+        ease: "power1.out",      
     });
 
     gsap.to(".left-navigation-bar", {
         scrollTrigger: {
             trigger: "#main",
-            start: "5% 0%", // Trigger when #main is halfway visible
-            end: "bottom bottom", // End when #main exits the viewport
-            scrub: 1, // Smooth scrolling effect
+            start: "5% 0%",
+            end: "bottom bottom",
+            scrub: 1,
         },
-        y: -20, // Parallax movement upwards
-        ease: "power1.out", // Smooth easing for consistent animation
+        y: -20, 
+        ease: "power1.out",
     });
 
     gsap.to("#job iconify-icon", {
         scrollTrigger: {
             trigger: "#main",
-            start: "70% 50%", // Trigger when #main is halfway visible
-            end: "bottom bottom", // End when #main exits the viewport
-            scrub: 1, // Smooth scrolling effect
+            start: "70% 50%",
+            end: "bottom bottom",
+            scrub: 1,
         },
-        y: -60, // Parallax movement upwards
-        ease: "power1.out", // Smooth easing for consistent animation
+        y: -60,
+        ease: "power1.out",
     });
 
     gsap.to("#student-wants", {
         scrollTrigger: {
             trigger: "#main",
-            start: "70% 40%", // Trigger when #main is halfway visible
-            end: "bottom bottom", // End when #main exits the viewport
-            scrub: 1, // Smooth scrolling effect
+            start: "70% 40%",
+            end: "bottom bottom",
+            scrub: 1,
         },
-        y: -90, // Parallax movement upwards
-        ease: "power1.out", // Smooth easing for consistent animation
+        y: -90,
+        ease: "power1.out",
     });
 
     gsap.to("#software-engineer", {
         scrollTrigger: {
             trigger: "#main",
-            start: "70% 40%", // Trigger when #main is halfway visible
-            end: "bottom bottom", // End when #main exits the viewport
-            scrub: 1, // Smooth scrolling effect
+            start: "70% 40%",
+            end: "bottom bottom", 
+            scrub: 1, 
         },
-        y: -90, // Parallax movement upwards
-        ease: "power1.out", // Smooth easing for consistent animation
+        y: -90,
+        ease: "power1.out",
     });
 
     gsap.to("#gabriel-mislang", {
         scrollTrigger: {
             trigger: "#main",
-            start: "80% 70%", // Trigger when #main is halfway visible
-            end: "bottom bottom", // End when #main exits the viewport
-            scrub: 1, // Smooth scrolling effect
+            start: "80% 70%",
+            end: "bottom bottom",
+            scrub: 1, 
         },
-        y: -50, // Parallax movement upwards
-        ease: "power1.out", // Smooth easing for consistent animation
+        y: -50,
+        ease: "power1.out",
     });
 
     gsap.to("#main", {
         scrollTrigger: {
             trigger: "#main",
-            start: "top top", // Trigger when #main is halfway visible
-            end: "bottom bottom", // End when #main exits the viewport
-            scrub: 1, // Smooth scrolling effect
+            start: "top top", 
+            end: "bottom bottom",
+            scrub: 1, 
             // Debugging markers
             // markers: true, // Disable markers for a cleaner look
         },
-        y: 70, // Parallax movement upwards
-        ease: "linear", // Smooth easing for consistent animation
+        y: 70, 
+        ease: "linear", 
     })
 
 });
