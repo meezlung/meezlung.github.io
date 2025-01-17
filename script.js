@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
     });
 
-    gsap.to("#job iconify-icon", {
+    gsap.to("#description iconify-icon", {
         scrollTrigger: {
             trigger: "#main",
             start: "70% 50%",
