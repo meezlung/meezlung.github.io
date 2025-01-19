@@ -33,14 +33,14 @@ body {
 
     @media (max-width: 768px) {
         height: 100vh;
-        background-size: contain;
-        background-position: 40%;
+        background-size: cover;
+        background-position: 60% top;
     }
 
     @media (max-width: 480px) {
         height: 100vh;
         background-size: cover;
-        background-position: 40% top;
+        background-position: 60% top;
     }
 }
 
@@ -137,9 +137,10 @@ i {
     position: relative;
     white-space: nowrap;
     left: 1.5%;
+    overflow: hidden;
+
 
     @media (max-width: 768px) {
-        overflow: hidden;
         top: 40%;
     }
 }
@@ -157,7 +158,7 @@ i {
     mix-blend-mode: difference;
 
     @media (max-width: 768px) {
-        font-size: 30vw;
+        font-size: 20vw;
     }
 }
 
