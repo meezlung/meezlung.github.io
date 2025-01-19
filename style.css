@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/termina');
 @import url('https://fonts.cdnfonts.com/css/null-pointer');
+@import url('https://fonts.cdnfonts.com/css/jetbrains-mono');
 
 * {
     margin: 0px; 
@@ -9,25 +10,37 @@
     box-sizing: border-box;
 }
 
+html {
+    overscroll-behavior: none;
+}
+
 body {
-    background-color: black;
     color: #fff;
     width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
     perspective: 1px;
     transform-style: preserve-3d;
+    overscroll-behavior: none;
 }
 
 #main {
     width: 100%;
-    height: 105vh;
+    height: 100vh;
     background-image: url(images/background-image-black-and-white.png);
     background-size: cover;
     background-position: center;
 
-    @media (max-width: 1000px) {
-        height: 70vh;
+    @media (max-width: 768px) {
+        height: 100vh;
+        background-size: contain;
+        background-position: 40%;
+    }
+
+    @media (max-width: 480px) {
+        height: 100vh;
+        background-size: cover;
+        background-position: 40% top;
     }
 }
 
@@ -51,26 +64,25 @@ body {
     display: inline-block;
     list-style: none;
     margin: 0px 20px;
-    font-size: 18px;
 }
 
 .credit a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1vw;
 }
 
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
-    font-size: 18px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1vw;
+    font-family: 'JetBrains Mono', sans-serif;
 }
 
 #main-elements {
@@ -82,28 +94,41 @@ nav ul li a {
 
 #description {
     position: absolute;
-    top: 15%;
+    top: 1%;
     right: 10%;
 }
 
 #arrow-right-down-line {
-    display: inline-block;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     margin-bottom: 4.5vw;
-    margin-left: 9vw;
+    margin-left: 9.1vw;
 }
 
-#description_line_1, #description_line_2 {
-    font-size: 1.8vw;
+#description_line_1, #description_line_2, #description_line_3 {
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: 1vw;
     margin-left: 9.6vw;
-    margin-bottom: 0.5vw;
+    margin-bottom: 0.7vw;
+    font-weight: normal;
+}
+
+i {
+    font-family: 'JetBrains Mono', monospace;
 }
 
 #github-logo {
     display: inline-block;
     font-size: 2.5vw;
     margin-bottom: 4vw;
-    margin-left: 9vw;
+    margin-left: 9.3vw;
+    color: white
+}
+
+#linkedin-logo, #facebook-logo, #twitter-logo, #youtube-logo, #gmail-logo {
+    display: inline-block;
+    font-size: 2.5vw;
+    margin-bottom: 4vw;
+    color: white;
 }
 
 #gabriel-mislang {
@@ -112,6 +137,11 @@ nav ul li a {
     position: relative;
     white-space: nowrap;
     left: 1.5%;
+
+    @media (max-width: 768px) {
+        overflow: hidden;
+        top: 40%;
+    }
 }
 
 #gabriel-mislang h1 {
@@ -125,6 +155,10 @@ nav ul li a {
     user-select: none; /* Standard syntax */
     font-family: 'Null Pointer;', sans-serif;
     mix-blend-mode: difference;
+
+    @media (max-width: 768px) {
+        font-size: 30vw;
+    }
 }
 
 #gabriel-mislang h1::before {
