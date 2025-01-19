@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const scrollTop = window.scrollY || document.documentElement.scrollTop; // Get current scroll position
 
             const moveX = scrollTop * -2.4; // Sensitivity for X axis
-            const moveY = scrollTop * -0.30; // Sensitivity for Y axis (parallax effect)
+            // const moveY = scrollTop * -0.15; // Sensitivity for Y axis (parallax effect)
             
             gsap.to(gabrielMislang, {
                 x: moveX,
-                y: moveY, // Apply parallax effect on Y axis
+                // y: moveY, // Apply parallax effect on Y axis
                 duration: 0.1, // Smooth update for visible responsiveness
                 ease: "power4.out", // Smooth easing for consistent animation
                 overwrite: "auto", // Prevent overlapping animations
@@ -19,16 +19,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }   
 
-    const mainSection = document.querySelector('#main');
+    // const mainSection = document.querySelector('#main');
 
-    if (mainSection) {
-        window.addEventListener('scroll', () => {
-            const scrollTop = window.scrollY || document.documentElement.scrollTop;
-            const cropValue = Math.min(scrollTop / 30, 100); // Adjust the divisor to control the cropping speed
+    // if (mainSection) {
+    //     window.addEventListener('scroll', () => {
+    //         const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    //         const cropValue = Math.min(scrollTop / 25, 100); // Adjust the divisor to control the cropping speed
 
-            mainSection.style.clipPath = `inset(0 0 ${cropValue}% 0)`;
-        });
-    }
+    //         mainSection.style.clipPath = `inset(0 0 ${cropValue}% 0)`;
+    //     });
+    // }
 
     const typeAnimation = (element, text, callback) => {
         let index = 0;
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.to("#github-logo", {
         scrollTrigger: {
             trigger: "#main",
-            start: "70% 25%",
+            start: "70% 28%",
             end: "bottom bottom",
             scrub: 1,
         },
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.to("#linkedin-logo", {
         scrollTrigger: {
             trigger: "#main",
-            start: "70% 20%",
+            start: "70% 23%",
             end: "bottom bottom",
             scrub: 1,
         },
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.to("#facebook-logo", {
         scrollTrigger: {
             trigger: "#main",
-            start: "70% 15%",
+            start: "70% 18%",
             end: "bottom bottom",
             scrub: 1,
         },
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.to("#twitter-logo", {
         scrollTrigger: {
             trigger: "#main",
-            start: "70% 10%",
+            start: "70% 13%",
             end: "bottom bottom",
             scrub: 1,
         },
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.to("#youtube-logo", {
         scrollTrigger: {
             trigger: "#main",
-            start: "70% 5%",
+            start: "70% 8%",
             end: "bottom bottom",
             scrub: 1,
         },
@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.to("#gmail-logo", {
         scrollTrigger: {
             trigger: "#main",
-            start: "70% 0%",
+            start: "70% 3%",
             end: "bottom bottom",
             scrub: 1,
         },
