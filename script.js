@@ -78,113 +78,113 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
     });
 
-    gsap.to("#arrow-right-down-line", {
-        scrollTrigger: {
-            trigger: "#main",
-            start: "70% 50%",
-            end: "bottom bottom",
-            scrub: 1,
-        },
-        y: -60,
-        ease: "power1.out",
-    });
+    // gsap.to("#arrow-right-down-line", {
+    //     scrollTrigger: {
+    //         trigger: "#main",
+    //         start: "70% 50%",
+    //         end: "bottom bottom",
+    //         scrub: 1,
+    //     },
+    //     y: -60,
+    //     ease: "power1.out",
+    // });
     
-    gsap.to("#description_line_1", {
-        scrollTrigger: {
-            trigger: "#main",
-            start: "70% 40%",
-            end: "bottom bottom",
-            scrub: 1,
-        },
-        y: -90,
-        ease: "power1.out",
-    });
+    // gsap.to("#description_line_1", {
+    //     scrollTrigger: {
+    //         trigger: "#main",
+    //         start: "70% 40%",
+    //         end: "bottom bottom",
+    //         scrub: 1,
+    //     },
+    //     y: -90,
+    //     ease: "power1.out",
+    // });
 
-    gsap.to("#description_line_2", {
-        scrollTrigger: {
-            trigger: "#main",
-            start: "70% 37%",
-            end: "bottom bottom", 
-            scrub: 1, 
-        },
-        y: -90,
-        ease: "power1.out",
-    });
+    // gsap.to("#description_line_2", {
+    //     scrollTrigger: {
+    //         trigger: "#main",
+    //         start: "70% 37%",
+    //         end: "bottom bottom", 
+    //         scrub: 1, 
+    //     },
+    //     y: -90,
+    //     ease: "power1.out",
+    // });
 
-    gsap.to("#description_line_3", {
-        scrollTrigger: {
-            trigger: "#main",
-            start: "70% 34%",
-            end: "bottom bottom", 
-            scrub: 1, 
-        },
-        y: -90,
-        ease: "power1.out",
-    });
+    // gsap.to("#description_line_3", {
+    //     scrollTrigger: {
+    //         trigger: "#main",
+    //         start: "70% 34%",
+    //         end: "bottom bottom", 
+    //         scrub: 1, 
+    //     },
+    //     y: -90,
+    //     ease: "power1.out",
+    // });
 
-    gsap.to("#github-logo", {
-        scrollTrigger: {
-            trigger: "#main",
-            start: "70% 28%",
-            end: "bottom bottom",
-            scrub: 1,
-        },
-        y: -90,
-        ease: "power1.out",
-    });
+    // gsap.to("#github-logo", {
+    //     scrollTrigger: {
+    //         trigger: "#main",
+    //         start: "70% 28%",
+    //         end: "bottom bottom",
+    //         scrub: 1,
+    //     },
+    //     y: -90,
+    //     ease: "power1.out",
+    // });
 
-    gsap.to("#linkedin-logo", {
-        scrollTrigger: {
-            trigger: "#main",
-            start: "70% 23%",
-            end: "bottom bottom",
-            scrub: 1,
-        },
-        y: -90,
-        ease: "power1.out",
-    });
+    // gsap.to("#linkedin-logo", {
+    //     scrollTrigger: {
+    //         trigger: "#main",
+    //         start: "70% 23%",
+    //         end: "bottom bottom",
+    //         scrub: 1,
+    //     },
+    //     y: -90,
+    //     ease: "power1.out",
+    // });
 
-    gsap.to("#facebook-logo", {
-        scrollTrigger: {
-            trigger: "#main",
-            start: "70% 18%",
-            end: "bottom bottom",
-            scrub: 1,
-        },
-        y: -90,
-        ease: "power1.out",
-    })
+    // gsap.to("#facebook-logo", {
+    //     scrollTrigger: {
+    //         trigger: "#main",
+    //         start: "70% 18%",
+    //         end: "bottom bottom",
+    //         scrub: 1,
+    //     },
+    //     y: -90,
+    //     ease: "power1.out",
+    // })
 
-    gsap.to("#twitter-logo", {
-        scrollTrigger: {
-            trigger: "#main",
-            start: "70% 13%",
-            end: "bottom bottom",
-            scrub: 1,
-        },
-        y: -90,
-        ease: "power1.out",
-    });
+    // gsap.to("#twitter-logo", {
+    //     scrollTrigger: {
+    //         trigger: "#main",
+    //         start: "70% 13%",
+    //         end: "bottom bottom",
+    //         scrub: 1,
+    //     },
+    //     y: -90,
+    //     ease: "power1.out",
+    // });
 
-    gsap.to("#youtube-logo", {
-        scrollTrigger: {
-            trigger: "#main",
-            start: "70% 8%",
-            end: "bottom bottom",
-            scrub: 1,
-        },
-        y: -90,
-        ease: "power1.out",
-    })
+    // gsap.to("#youtube-logo", {
+    //     scrollTrigger: {
+    //         trigger: "#main",
+    //         start: "70% 8%",
+    //         end: "bottom bottom",
+    //         scrub: 1,
+    //     },
+    //     y: -90,
+    //     ease: "power1.out",
+    // })
 
-    gsap.to("#gmail-logo", {
-        scrollTrigger: {
-            trigger: "#main",
-            start: "70% 3%",
-            end: "bottom bottom",
-            scrub: 1,
-        },
-        y: -90,
-        ease: "power1.out",
-    })
+    // gsap.to("#gmail-logo", {
+    //     scrollTrigger: {
+    //         trigger: "#main",
+    //         start: "70% 3%",
+    //         end: "bottom bottom",
+    //         scrub: 1,
+    //     },
+    //     y: -90,
+    //     ease: "power1.out",
+    // })
 });
