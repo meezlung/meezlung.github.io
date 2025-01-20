@@ -22,26 +22,20 @@ body {
     perspective: 1px;
     transform-style: preserve-3d;
     overscroll-behavior: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 #main {
     width: 100%;
-    height: 100vh;
+    height: 105vh;
     background-image: url(images/background-image-black-and-white.png);
     background-size: cover;
     background-position: center;
 
-    @media (max-width: 768px) {
-        height: 100vh;
-        background-size: cover;
-        background-position: 60% top;
-    }
-
-    @media (max-width: 480px) {
-        height: 100vh;
-        background-size: cover;
-        background-position: 60% top;
-    }
 }
 
 .container {
@@ -63,19 +57,31 @@ body {
 .credit {
     display: inline-block;
     list-style: none;
-    margin: 0px 20px;
+    margin: 0px 15px;
+
+    @media (max-width: 480px) {
+        margin: 0px 5px;
+    }
 }
 
 .credit a {
     color: #fff;
     text-decoration: none;
     font-size: 1vw;
+
+    @media (max-width: 1200px) {
+        font-size: 1.5vw;
+    }
+
+    @media (max-width: 630px) {
+        font-size: 2.5vw;
+    }
 }
 
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 5px;
 }
 
 nav ul li a {
@@ -83,6 +89,14 @@ nav ul li a {
     text-decoration: none;
     font-size: 1vw;
     font-family: 'JetBrains Mono', sans-serif;
+
+    @media (max-width: 1200px) {
+        font-size: 1.5vw;
+    }
+
+    @media (max-width: 630px) {
+        font-size: 2.5vw;
+    }
 }
 
 #main-elements {
@@ -96,12 +110,40 @@ nav ul li a {
     position: absolute;
     top: 1%;
     right: 10%;
+
+    @media (max-width: 1200px) {
+        left: 60%;
+        right: 0%;
+    }
+
+    @media (max-width: 630px) {
+        top: 53%;
+        left: 5%;
+    }
+        
+    @media (max-width: 480px) {
+        top: 50%;
+        left: 2%;
+        right: 0%;
+    }
 }
 
 #arrow-right-down-line {
     font-size: 2.2vw;
     margin-bottom: 4.5vw;
     margin-left: 9.1vw;
+
+    @media (max-width: 1200px) {
+        font-size: 2.5vw;
+    }
+
+    @media (max-width: 630px) {
+        font-size: 3vw;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 5vw;
+    }
 }
 
 #description_line_1, #description_line_2, #description_line_3 {
@@ -110,10 +152,19 @@ nav ul li a {
     margin-left: 9.6vw;
     margin-bottom: 0.7vw;
     font-weight: normal;
-}
 
-i {
-    font-family: 'JetBrains Mono', monospace;
+
+    @media (max-width: 1200px) {
+        font-size: 1.5vw;
+    }
+
+    @media (max-width: 630px) {
+        font-size: 2.5vw;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 5vw;
+    }
 }
 
 #github-logo {
@@ -121,7 +172,15 @@ i {
     font-size: 2.5vw;
     margin-bottom: 4vw;
     margin-left: 9.3vw;
-    color: white
+    color: white;
+
+    @media (max-width: 630px) {
+        font-size: 4vw;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 6vw;
+    }
 }
 
 #linkedin-logo, #facebook-logo, #twitter-logo, #youtube-logo, #gmail-logo {
@@ -129,6 +188,14 @@ i {
     font-size: 2.5vw;
     margin-bottom: 4vw;
     color: white;
+
+    @media (max-width: 630px) {
+        font-size: 4vw;
+    }
+        
+    @media (max-width: 480px) {
+        font-size: 6vw;
+    }
 }
 
 #gabriel-mislang {
@@ -140,8 +207,8 @@ i {
     overflow: hidden;
 
 
-    @media (max-width: 768px) {
-        top: 40%;
+    @media (max-width: 630px) {
+        top: 30%;
     }
 }
 
@@ -157,9 +224,12 @@ i {
     font-family: 'Null Pointer;', sans-serif;
     mix-blend-mode: difference;
 
-    @media (max-width: 768px) {
-        font-size: 20vw;
+
+    @media (max-width: 630px) {
+        font-size: 30vw;
     }
+
+
 }
 
 #gabriel-mislang h1::before {
